@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+.App {
+  text-align: center;
+}
+body{
+  background-color: #1aa0b8;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.main_div{
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px rgb(201, 200, 200);
+  transition: 1s;
+}
+@media(max-width:550px)
+{
+  .main_div{
+    width: 400px;
+  }
+}
+@media(max-width:400px)
+{
+  .main_div{
+    width: 300px;
+  }
+}
+.inputField{
+  display: inline-block;
+}
+.inputField input{
+  font-family: 'Josefin Sans', sans-serif;
+  width: 400px;
+  font-size: 20px;
+  outline: none;  
+  border: none;
+  font-weight: 1000;
+}
+
+@media(max-width:650px){
+  .inputField input{
+    width: 70%;
+  }
+}
+.todolist{
+  text-align: left;
+
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size:30px;
+  margin: 20px;
+  padding: 10px;
+  height: 50px;
+  overflow-y: scroll;
+  border-bottom: 1px solid #1aa0b8;
+}
+.item span{
+  margin-right: 15px;
+  cursor: pointer;
+  justify-content: center;
+}
+.delete:hover{
+
+  color: #1aa0b8;
+  background-color: white;
+}
+.todolist ul{
+  padding: 0;
+}
